@@ -264,7 +264,7 @@ export default function BottomTabBarItem({
     testID,
     accessibilityLabel,
     // FIXME: accessibilityRole: 'tab' doesn't seem to work as expected on iOS
-    accessibilityRole: Platform.select({ ios: 'button', default: 'tab' }),
+    accessibilityRole: Platform.select({ ios: 'button', default: 'none' }),
     accessibilityState: { selected: focused },
     // @ts-expect-error: keep for compatibility with older React Native versions
     accessibilityStates: focused ? ['selected'] : [],
